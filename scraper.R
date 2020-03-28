@@ -56,4 +56,4 @@ hmtTable <-hmtTable %>%
 
 
 #wordcloud2
-wordcloud2(hmtTable, size=4, backgroundColor = "black", color = "random-light")
+wordcloud2(hmtTable, size=8, backgroundColor = "black", color = "random-light")
