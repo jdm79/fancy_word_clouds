@@ -23,7 +23,7 @@ create_token(
 #Grab tweets - note: reduce to 1000 if it's slow
 ?search_tweets
 hmt <- search_tweets(
-  "#5G", n = 2000, include_rts = FALSE
+  "#5G", n = 2000, include_rts = FALSE, lang = "en"
 )
 
 #Look at tweets
@@ -56,4 +56,4 @@ hmtTable <-hmtTable %>%
 
 
 #wordcloud2
-wordcloud2(hmtTable, backgroundColor = "black", color = "random-light")
+wordcloud2(hmtTable, size=4, backgroundColor = "black", color = "random-light")
