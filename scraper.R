@@ -34,3 +34,19 @@ hmtTable <- hmt %>%
 data(stop_words)
 hmtTable <- hmtTable %>%
   anti_join(stop_words)
+
+#do a word count
+hmtTable <- hmtTable %>%
+  count(word, sort = TRUE) 
+hmtTable 
+
+#Remove other nonsense words
+hmtTable <-hmtTable %>%
+  filter(!word %in% c('t.co', 'https', 'handmaidstale', "handmaid's", 'season', 'episode', 'de', 'handmaidsonhulu',  'tvtime', 
+                      'watched', 'watching', 'watch', 'la', "it's", 'el', 'en', 'tv',
+                      'je', 'ep', 'week', 'amp'))
+
+wordcloud2(hmtTable, size=0.7)
+
+
+
