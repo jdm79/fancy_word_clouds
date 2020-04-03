@@ -2114,7 +2114,7 @@ function cv_handleHover(item, dimension, evt) {
 
   document.getElementById(id + "wcSpan").setAttribute(
     'data-l10n-args', JSON.stringify({ word: item[0], count: item[1] }));
-  document.getElementById(id + "wcSpan").innerHTML =item[0]+":" + item[1];
+  document.getElementById(id + "wcSpan").innerHTML ="The word " + item[0]+ " was mentioned " + item[1] + " times in tweets about 5G";
 
 }
 
