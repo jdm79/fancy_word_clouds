@@ -2,6 +2,7 @@
 <html>
   <title>5G Word Cloud</title>
 <head>
+  <h1>Hello world</h1>
 <meta charset="utf-8" />
 <style>body{background-color:white;}</style>
 <script>(function() {
@@ -2234,7 +2235,7 @@ function maskInit(el,x){
   // parse gexf data
         listData=[];
         for(var i=0; i<x.word.length; i++){
-          listData.push([x.word[i], x.freq[i]]);
+          listData.push([x.word[i] + " appears ", x.freq[i] + " times."]);
         }
      if(x.figBase64){
 
